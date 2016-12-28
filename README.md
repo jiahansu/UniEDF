@@ -17,7 +17,9 @@ Constant.EventType type;
 EdfData dv;
 string message;
 
-while ((dv = TrialNextEvent(out type, Constant.EventType.MESSAGEEVENT)) != null) {
+file.MoveToTrial(0);
+
+while ((dv = file.TrialNextEvent(out type, Constant.EventType.MESSAGEEVENT)) != null) {
     message = (dv as AllfData).fe.message;
 
     if (!string.IsNullOrEmpty(message) && message.StartsWith("GAZE_COORDS")) {
