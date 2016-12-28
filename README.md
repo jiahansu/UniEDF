@@ -1,5 +1,5 @@
 # UniEDF
-UniEDF is a Unity/C# binding for EyeLink data format access.
+UniEDF is a Unity/C# binding for EyeLink Data Format library.
 
 ###Requirement
 * Unity 5.5 or higher
